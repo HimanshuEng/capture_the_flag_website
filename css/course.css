@@ -1,0 +1,291 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+  width: 100%
+}
+
+body{
+    background: url('../images/imp3.png');
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    /* max-width: 1000px; Adjust width as needed */
+    /* height: 400px; Adjust height as needed */
+    max-width: 90%; /*Adjust maximum width as needed*/
+    max-height: 90%; /* Adjust maximum height as needed */
+    overflow: auto; /* Enable scrolling if content exceeds container size */
+}
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+  }
+  #modal-title{
+    color: #000000;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  .modal-header p{
+    color: #000000;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+
+  /* CSS for Text Field and Submit Button */
+
+  #myTextField {
+    width: 4000px;
+    height: 60px;
+    padding: 15px;
+    font-size: 18px;
+}
+.modal-body form {
+  margin-bottom: 20px;
+}
+
+.modal-body input[type="text"] {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-body .submit-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-body .submit-button:hover {
+  background-color: #0056b3;
+}
+
+  /* CSS for Description, Hint Button, and Point Display */
+.modal-body {
+  padding: 10px 15px;
+}
+
+.modal-body h2 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.modal-body p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hint-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hint-button:hover {
+  background-color: #0056b3;
+}
+
+.point {
+  font-weight: bold;
+  color: #28a745;
+}
+
+
+/****************/
+.main-container{
+    color: #92da3a;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.main-container > h2{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+}
+.main-container > p{
+    font-weight: 300;
+    padding: 10px 0;
+    opacity: 0.7;
+    text-align: center;
+}
+.category-head{
+    margin: 30px 0;
+}
+.category-head ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.category-title{
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
+    justify-content:center;
+    background: #a8a8a8;
+    padding: 12px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.category-title:hover{
+    opacity: 0.7;
+}
+.category-title li{
+    padding: 0 10px;
+}
+.category-title span{
+    color: #222;
+}
+.active{
+    background:#92da3a;
+}
+.istcont
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.maincontainer{
+    color: white;
+    padding: 20px;
+    width: 450px;
+    height: 300px;
+    box-shadow: 4px 4px 5px 6px gray;
+    border-radius: 5px;
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+   
+
+   
+    
+}
+.maincontainer button{
+    width:100px;
+    height: 35px;
+    font-size: larger;
+    /* padding: 10px; */
+    margin-top: 150px;
+    margin-left: 20px;
+    background-color: chartreuse;
+}
+.point{
+ font-size: larger;
+ margin-top: -45px;
+ margin-left: 300px;
+ /* letter-spacing: 2PX; */
+}
+#NO{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 350px;
+}
+#hint{
+  /* background-color: #007bff; */
+  margin-left: 63vh;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* .hint small{
+  color: #000000;
+  /* margin: 50px; */
+  /* margin-left:64.5vh; */
+
+/* } */ 
+.modal-body .hint p {
+  /* margin-left: 60vh; */
+  /* margin-top: -50px; */
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+}
+.modal-body .hint .textfield input{
+  margin-top: 100px;
+  width: 300px;
+  height: 50px;
+
+
+}
+
+
+#btn {
+  width: 120px; /* Adjust the width as needed */
+  height: 45px; /* Adjust the height as needed */
+  font-size: 14px; /* Optionally adjust the font size */
+  margin-left: 50Px;
+}
+
+
