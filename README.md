@@ -22,8 +22,8 @@ This website can be used as a learning tool for anyone interested in understandi
 
 # Screenshots
  **Home Page**
- ![Uploading Screenshot 2024-05-16 220051.png…]()
-
  
+ ![Screenshot 2024-05-16 220051](https://github.com/user-attachments/assets/dc761893-ddef-4b25-90fb-4456d0768163)
+
 
 
